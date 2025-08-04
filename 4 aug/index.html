@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Auth</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <input type="radio" name="tab" id="login" checked class="tab-switch">
+            <input type="radio" name="tab" id="signup" class="tab-switch">
+
+            <div class="tabs">
+                <label for="login" class="tab">Login</label>
+                <label for="signup" class="tab">Signup</label>
+            </div>
+
+            <div class="form-content">
+                <!-- Login Form -->
+                <div class="form login-form">
+                    <h2>Login to Dashboard</h2>
+                    <input type="email" placeholder="Email" id="logEmail" required>
+                    <input type="password" placeholder="Password" id="logPass" required>
+                    <button id="loginBtn">Login</button>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="form signup-form">
+                    <h2>Create an Account</h2>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" id="signEmail" required>
+                    <input type="password" placeholder="Password" id="signPassword" required>
+                    <button id="signBtn">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
